@@ -21,13 +21,13 @@ You also can join the chat with your own username and send message in the web an
 To use the api:
 1. Get all sent message
 ```
-curl --location --request GET 'localhost:8000/api/messages' \
+curl --location --request GET 'localhost:8000/api/messages'
 ```
 2. Send message
 ```
 curl --location --request POST 'http://localhost:8000/api/messages' \
 --header 'Content-Type: application/json' \
 --data-raw '{
-	"message": "ohok molohok"
+	"message": "Hey, this is my first golang application!"
 }'
 ```
