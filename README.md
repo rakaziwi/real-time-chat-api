@@ -15,20 +15,19 @@ go run main.go
 The application will run at localhost at port 8000, so make sure the port 8000 is not used
 
 You can access this application using two ways, with browser and api.
-I created the web page to show the api send message function is working in real time.
+I created the web page to show the send message api function is working in real time.
 You also can join the chat with your own username and send message in the web and to see get all sent message api is working.
 
 To use the api:
 1. Get all sent message
-`
+```
 curl --location --request GET 'localhost:8000/api/messages' \
-`
+```
 2. Send message
-`
+```
 curl --location --request POST 'http://localhost:8000/api/messages' \
 --header 'Content-Type: application/json' \
---header 'Content-Type: text/plain' \
 --data-raw '{
 	"message": "ohok molohok"
 }'
-`
+```
